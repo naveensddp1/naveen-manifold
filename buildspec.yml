@@ -16,6 +16,7 @@ phases:
             - echo "Installation Process Completed"
             - echo "Author $Name , Project $Project"
             - printenv 
+            - echo "$CODEBUILD_BUILD_ID"
     pre_build:
         commands: 
             - echo "This is the start of Pre-Build phase"
